@@ -111,7 +111,6 @@ export default function About() {
                         {edu.year}
                       </span>
                     </div>
-                    <p className="text-green-400 text-sm mt-2 font-mono">{edu.grade}</p>
                   </motion.div>
                 ))}
               </div>

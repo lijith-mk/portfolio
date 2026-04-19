@@ -2,7 +2,7 @@ export const personalInfo = {
   name: "Lijith MK",
   title: "Full Stack Developer",
   subtitle: "MCA Graduate | MERN Stack | Problem Solver",
-  email: "lijithmk@email.com",
+  email: "lijithmk357@gmail.com",
   phone: "+91 6238308205",
   location: "Kannur, Kerala",
   github: "https://github.com/lijithmk",
@@ -219,14 +219,12 @@ export const experience = [
 export const education = [
   {
     degree: "Master of Computer Applications (MCA)",
-    institution: "University Name, Kerala",
-    year: "2022 – 2024",
-    grade: "CGPA: 8.5/10",
+    institution: "Amal Jyothi College of Engineering Autonomous",
+    year: "2024 – 2026",
   },
   {
     degree: "Bachelor of Computer Applications (BCA)",
-    institution: "College Name, Kerala",
+    institution: "Koshys Group of Institutions, Bangalore",
     year: "2019 – 2022",
-    grade: "CGPA: 8.2/10",
   },
 ];
