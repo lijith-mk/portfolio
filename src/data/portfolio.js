@@ -5,10 +5,10 @@ export const personalInfo = {
   email: "lijithmk357@gmail.com",
   phone: "+91 6238308205",
   location: "Kannur, Kerala",
-  github: "https://github.com/lijithmk",
-  linkedin: "https://linkedin.com/in/lijithmk",
+  github: "https://github.com/lijith-mk",
+  linkedin: "https://linkedin.com/in/lijith-mk",
   bio: "Passionate MCA graduate with expertise in building modern, scalable web applications using the MERN stack. I love turning complex problems into elegant, user-friendly solutions.",
-  resumeLink: "#",
+  resumeLink: "https://res.cloudinary.com/dxspcarx8/image/upload/v1776613425/xdouqhko42lg6qzsn9zg.pdf",
   photo: "https://res.cloudinary.com/dxspcarx8/image/upload/v1776607217/rcwknmjqpdu71824mfnj.jpg",
 };
 
@@ -51,6 +51,16 @@ export const skills = [
       { name: "VS Code", level: 95 },
       { name: "Postman", level: 85 },
       { name: "Linux", level: 72 },
+    ],
+  },
+  {
+    category: "Mobile Development",
+    icon: "📱",
+    items: [
+      { name: "Flutter", level: 82 },
+      { name: "React Native", level: 78 },
+      { name: "Dart", level: 80 },
+      { name: "Expo", level: 75 },
     ],
   },
 ];

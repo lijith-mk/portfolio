@@ -83,6 +83,8 @@ export default function Hero() {
             </motion.a>
             <motion.a
               href={personalInfo.resumeLink}
+              target="_blank"
+              rel="noreferrer"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
               className="px-8 py-3 rounded-xl glass border border-purple-500/40 text-slate-200 font-semibold hover:border-purple-400 transition-all flex items-center gap-2"
@@ -160,6 +162,20 @@ export default function Hero() {
               className="hidden sm:block absolute top-1/2 -right-12 glass border border-border px-3 py-2 rounded-xl text-xs font-mono text-yellow-400"
             >
               🟢 Node.js
+            </motion.div>
+            <motion.div
+              animate={{ y: [0, -8, 0] }}
+              transition={{ duration: 2, repeat: Infinity, delay: 2.1 }}
+              className="hidden sm:block absolute top-0 -left-12 glass border border-border px-3 py-2 rounded-xl text-xs font-mono text-cyan-400"
+            >
+              🐦 Flutter
+            </motion.div>
+            <motion.div
+              animate={{ y: [0, -8, 0] }}
+              transition={{ duration: 2, repeat: Infinity, delay: 2.8 }}
+              className="hidden sm:block absolute -bottom-4 -right-4 glass border border-border px-3 py-2 rounded-xl text-xs font-mono text-pink-400"
+            >
+              📱 React Native
             </motion.div>
           </div>
         </motion.div>
