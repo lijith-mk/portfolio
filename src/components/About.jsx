@@ -25,7 +25,7 @@ export default function About() {
           className="text-center mb-16"
         >
           <p className="text-purple-400 font-mono text-sm mb-2">// get to know me</p>
-          <h2 className="text-4xl lg:text-5xl font-black text-white">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white">
             About <span className="gradient-text">Me</span>
           </h2>
         </motion.div>

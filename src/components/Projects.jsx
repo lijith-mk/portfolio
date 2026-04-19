@@ -101,7 +101,7 @@ export default function Projects() {
           className="text-center mb-12"
         >
           <p className="text-purple-400 font-mono text-sm mb-2">// things I've built</p>
-          <h2 className="text-4xl lg:text-5xl font-black text-white">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white">
             My <span className="gradient-text">Projects</span>
           </h2>
         </motion.div>

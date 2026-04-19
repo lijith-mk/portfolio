@@ -46,15 +46,15 @@ export default function Experience() {
               whileInView="visible"
               viewport={{ once: true }}
               custom={i * 0.2}
-              className="relative pl-16 pb-12 last:pb-0"
+              className="relative pl-12 sm:pl-16 pb-12 last:pb-0"
             >
               {/* Timeline dot */}
               <div className="absolute left-3.5 top-1 w-5 h-5 rounded-full bg-primary border-2 border-dark glow flex items-center justify-center">
                 <div className="w-2 h-2 rounded-full bg-white" />
               </div>
 
-              <div className="glass rounded-2xl p-6 border border-border hover:border-purple-500/40 transition-all glow-hover">
-                <div className="flex flex-wrap items-start justify-between gap-4 mb-4">
+              <div className="glass rounded-2xl p-4 sm:p-6 border border-border hover:border-purple-500/40 transition-all glow-hover">
+                <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-2 sm:gap-4 mb-4">
                   <div>
                     <h3 className="text-white font-bold text-xl">{exp.role}</h3>
                     <div className="flex items-center gap-2 mt-1">
@@ -86,7 +86,7 @@ export default function Experience() {
             whileInView="visible"
             viewport={{ once: true }}
             custom={0.4}
-            className="relative pl-16"
+            className="relative pl-12 sm:pl-16"
           >
             <div className="absolute left-3.5 top-1 w-5 h-5 rounded-full border-2 border-dashed border-purple-400/50 flex items-center justify-center">
               <div className="w-2 h-2 rounded-full bg-purple-400/50 animate-pulse" />

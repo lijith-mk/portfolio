@@ -44,12 +44,12 @@ export default function Hero() {
             Available for opportunities
           </motion.div>
 
-          <h1 className="text-5xl lg:text-7xl font-black mb-4 leading-tight">
+          <h1 className="text-3xl sm:text-5xl lg:text-7xl font-black mb-4 leading-tight">
             Hi, I'm{" "}
             <span className="gradient-text">{personalInfo.name}</span>
           </h1>
 
-          <div className="text-2xl lg:text-3xl font-semibold text-slate-300 mb-6 h-12">
+          <div className="text-xl sm:text-2xl lg:text-3xl font-semibold text-slate-300 mb-6 h-10">
             <TypeAnimation
               sequence={[
                 "Full Stack Developer",
@@ -68,7 +68,7 @@ export default function Hero() {
             />
           </div>
 
-          <p className="text-slate-400 text-lg max-w-xl mb-8 leading-relaxed">
+          <p className="text-slate-400 text-base sm:text-lg max-w-xl mb-8 leading-relaxed">
             {personalInfo.bio}
           </p>
 
@@ -123,14 +123,14 @@ export default function Hero() {
         >
           <div className="relative float-animation">
             {/* Outer ring */}
-            <div className="w-72 h-72 lg:w-80 lg:h-80 rounded-full border-2 border-purple-500/30 flex items-center justify-center relative">
+            <div className="w-56 h-56 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-full border-2 border-purple-500/30 flex items-center justify-center relative">
               {/* Rotating dashed ring */}
               <div
                 className="absolute inset-0 rounded-full border-2 border-dashed border-purple-400/20"
                 style={{ animation: "spin 20s linear infinite" }}
               />
               {/* Inner card */}
-              <div className="w-56 h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden border-2 border-purple-500/40 glow">
+              <div className="w-44 h-44 sm:w-56 sm:h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden border-2 border-purple-500/40 glow">
                 <img
                   src={personalInfo.photo}
                   alt="Lijith MK"
@@ -139,25 +139,25 @@ export default function Hero() {
               </div>
             </div>
 
-            {/* Floating badges */}
+            {/* Floating badges — hidden on small screens */}
             <motion.div
               animate={{ y: [0, -8, 0] }}
               transition={{ duration: 2, repeat: Infinity, delay: 0 }}
-              className="absolute -top-4 -right-4 glass border border-border px-3 py-2 rounded-xl text-xs font-mono text-green-400"
+              className="hidden sm:block absolute -top-4 -right-4 glass border border-border px-3 py-2 rounded-xl text-xs font-mono text-green-400"
             >
               ⚡ React.js
             </motion.div>
             <motion.div
               animate={{ y: [0, -8, 0] }}
               transition={{ duration: 2, repeat: Infinity, delay: 0.7 }}
-              className="absolute -bottom-4 -left-4 glass border border-border px-3 py-2 rounded-xl text-xs font-mono text-blue-400"
+              className="hidden sm:block absolute -bottom-4 -left-4 glass border border-border px-3 py-2 rounded-xl text-xs font-mono text-blue-400"
             >
               🍃 MongoDB
             </motion.div>
             <motion.div
               animate={{ y: [0, -8, 0] }}
               transition={{ duration: 2, repeat: Infinity, delay: 1.4 }}
-              className="absolute top-1/2 -right-12 glass border border-border px-3 py-2 rounded-xl text-xs font-mono text-yellow-400"
+              className="hidden sm:block absolute top-1/2 -right-12 glass border border-border px-3 py-2 rounded-xl text-xs font-mono text-yellow-400"
             >
               🟢 Node.js
             </motion.div>
