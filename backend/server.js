@@ -16,12 +16,16 @@ app.use(express.json());
 // API Routes
 app.use("/api/contact", contactRoutes);
 
-// Serve React build in production
+// Serve React build in production only if build folder exists
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "../build")));
-  app.get("/{*splat}", (req, res) => {
-    res.sendFile(path.join(__dirname, "../build", "index.html"));
-  });
+  const buildPath = path.join(__dirname, "../build");
+  const fs = require("fs");
+  if (fs.existsSync(buildPath)) {
+    app.use(express.static(buildPath));
+    app.get("/{*splat}", (req, res) => {
+      res.sendFile(path.join(buildPath, "index.html"));
+    });
+  }
 }
 
 app.get("/api", (req, res) => res.json({ message: "Portfolio API running" }));
