@@ -19,7 +19,7 @@ app.use("/api/contact", contactRoutes);
 // Serve React build in production
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "../build")));
-  app.get("*", (req, res) => {
+  app.get("/{*splat}", (req, res) => {
     res.sendFile(path.join(__dirname, "../build", "index.html"));
   });
 }
